@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarWiz</title>
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="fullpage">
+
+        <div class="section s1">
+            <div class="slide" data-anchor="slide1">
+                <h1>Welcome to CarWiz!</h1>
+                <h2>Please Enter your Vehicles VIN<sup><a href="https://www.carmd.com/where-to-find-vin-number/" target="_blank"><img id="question" src="images/SeekPng.com_blue-circle-png_1457681.png" alt=""></a></sup></h2>
+                <form id="userEntry" action="#section1/slide2">
+                    <div>
+                        <label for="vin">VIN:</label>
+                        <input type="text" id="vin">
+                    </div>
+                    <button id="submit">Search</button>
+                </form>
+            </div>
+
+            <div class="slide sl2" data-anchor="slide2">
+                <div id='leftDiv'>
+                    <div id="vehInfo" class="leftInDiv">
+                        <h2>Specs</h2>
+                        <h3>Search a VIN to get Recommendations!</h3>
+                    </div>
+                    <div id="specRes" class="rightInDiv">
+                        <h2>Resources</h2>
+                        <h3>Search a VIN to get Recommendations!</h3>
+                    </div>
+                </div>
+                <div id='rightDiv'>
+                    <div class="leftInDiv">
+                        <h2>Not what you needed?</h2>
+                        <img id="arrow" src="images/SeekPng.com_chennai-super-kings-logo_8987772.png" alt="Arrow Pointing Right">
+                    </div>
+                    <div class="rightInDiv">
+                        <h2>Try these places!</h2>
+                        <a href="http://www.autoblog.com/buying-guides/">
+                            <h3>Auto Blog</h3>
+                        </a>
+                        <a href="http://workshop-manuals.com/">
+                            <h3>Workshop Manuals</h3>
+                        </a>
+                        <a href="https://haynes.com/en-us/">
+                            <h3>Haynes Online</h3>
+                        </a>
+                        <a href="https://www.eautorepair.net/Marketing/default.asp?VID=&Count=Y">
+                            <h3>Mitchell1</h3>
+                        </a>
+                        <a href="https://www.youtube.com/">
+                            <h3>Youtube</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+</body>
+
+</html>

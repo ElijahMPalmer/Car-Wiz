@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('Fonts/Raleway/Raleway-VariableFont_wght.ttf');
+}
+
+.s1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+    background: url("images/lance-asper-7bBVx1dRYrk-unsplash.jpg");
+    background-size: cover;
+}
+
+.s1 h1 {
+    font-family: Raleway;
+    font-size: 8em;
+    font-weight: 400;
+    color: antiquewhite;
+    text-shadow: 1px 1px 3px black;
+    margin-bottom: 10px;
+}
+
+.s1 h2 {
+    margin-top: 5px;
+    font-family: Raleway;
+    font-size: 2em;
+    font-weight: 300;
+    text-shadow: 1px 1px 3px black;
+    color: antiquewhite;
+}
+
+.sl2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+label {
+    font-family: Raleway;
+    font-style: italic;
+    font-size: 1.2em;
+    font-weight: 300;
+    text-shadow: 1px 1px 3px black;
+    color: antiquewhite;
+}
+
+select {
+    width: 100px;
+    margin-right: 10px;
+}
+
+#vin {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 150px;
+}
+
+#or {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#leftDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, .9);
+    font-family: Raleway;
+    text-shadow: 1px 1px 3px black;
+    color: antiquewhite;
+    width: 90%;
+    height: 45%;
+    margin: 25px 5% 25px 5%;
+    padding: 25px 50px 25px 50px;
+}
+
+#rightDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, .9);
+    font-family: Raleway;
+    text-shadow: 1px 1px 3px black;
+    color: antiquewhite;
+    width: 90%;
+    height: 45%;
+    margin: 25px 5% 25px 5%;
+    padding: 25px 50px 25px 50px;
+}
+
+.leftInDiv {
+    height: 100%;
+    width: 40%;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+
+.leftInDiv h2 {
+    font-size: 3em;
+}
+
+.rightInDiv {
+    height: 100%;
+    width: 40%;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+
+.rightInDiv h2 {
+    font-size: 3em;
+}
+
+#arrow {
+    margin-top: 20px;
+    color: white;
+    height: 28%;
+    width: 30%;
+}
+
+#question {
+    height: 15px;
+    width: 15px;
+}
