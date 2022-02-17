@@ -1,56 +1,23 @@
 new fullpage('#fullpage', {
-        autoScrolling: true,
-        navigation: true,
-        controlArrows: false,
-        slidesNavigation: true,
-        slidesNavPosition: 'bottom',
-        anchors: ['section1', 'section2']
-    })
-    // $.get("https://vpic.nhtsa.dot.gov/api//vehicles/GetVehicleVariableList?format=xml", (data) => {
-    //     console.log(data);
-    // })
-const $make = $("#make");
-let availableMakes = $.get("https://vpic.nhtsa.dot.gov/api/vehicles/GetAllMakes?format=json", (data) => {
-    console.log(data.Results);
-    for (let i = 0; i < data.Results.length; i++) {
-        const $manu = $("<option value='" + data.Results[i].Make_Name + "'>" + data.Results[i].Make_Name + "</options>");
-        $manu.appendTo($make);
-    }
-});
-
-$('#make').change(function() {
-    const $modelSel = $('#model');
-    const $currMake = $('#make').val();
-    console.log($currMake);
-    let availableModels = $.get("https://vpic.nhtsa.dot.gov/api/vehicles/GetModelsForMake/" + $currMake + "?format=json", (data) => {
-        console.log(data, 'avMods');
-        $modelSel.empty();
-        for (let i = 0; i < data.Results.length; i++) {
-            const $model = $("<option value='" + data.Results[i].Model_Name + "'>" + data.Results[i].Model_Name + "</options>")
-            $model.appendTo($modelSel);
-        }
-    })
+    autoScrolling: true,
+    navigation: true,
+    controlArrows: false,
+    slidesNavigation: true,
+    slidesNavPosition: 'bottom',
+    anchors: ['section1', 'section2']
 })
 
-const $yearSel = $('#year');
-let baseYear = 1980;
-for (let i = 0; i < 42; i++) {
-    const $year = $("<option value='" + baseYear + "'>" + baseYear + "</options>")
-    $year.appendTo($yearSel);
-    baseYear++;
-}
 
 const $submit = $('#submit');
-const $vin = $('#vin');
-const $vehInfo = $("#vehInfo")
-const $resource = $("#specRes")
 $submit.click(function() {
+    const $vin = $('#vin');
+    const $vehInfo = $("#vehInfo")
+    const $resource = $("#specRes")
     $vehInfo.empty();
     $resource.empty();
     if ($vin.val().length !== 0) {
-        console.log("worked")
         $.get('https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/' + $vin.val() + '?format=json', (data) => {
-            console.log(data);
+            console.log(data)
             const $vinMake = $('<h3>' + 'Make: ' + data.Results[0].Make + '</h3>');
             const $vinModel = $('<h3>' + 'Model: ' + data.Results[0].Model + '</h3>');
             const $vinYear = $('<h3>' + 'Year: ' + data.Results[0].ModelYear + '</h3>');
@@ -68,7 +35,6 @@ $submit.click(function() {
             let $ownersMan;
             let $forum;
             let $noRes;
-            console.log(make);
             switch (make) {
                 case 'acura':
                     $ownersMan = $('<h3><a href="https://owners.acura.com/vehicles/warranty" target="_blank" > Owners Manuals </a></h3 > ');
@@ -168,7 +134,6 @@ $submit.click(function() {
                     break;
                 default:
                     $noRes = $('<h3>No Results for now! Manufacturer will be added soon!</h3>')
-                    sendEmail();
             }
         })
     }

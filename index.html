@@ -2,34 +2,34 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CarWiz</title>
     <script defer src="app.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <div id="fullpage">
-
         <div class="section s1">
             <div class="slide" data-anchor="slide1">
                 <h1>Welcome to CarWiz!</h1>
-                <h2>Please Enter your Vehicles VIN<sup><a href="https://www.carmd.com/where-to-find-vin-number/" target="_blank"><img id="question" src="images/SeekPng.com_blue-circle-png_1457681.png" alt=""></a></sup></h2>
-                <form id="userEntry" action="#section1/slide2">
-                    <div>
-                        <label for="vin">VIN:</label>
-                        <input type="text" id="vin">
-                    </div>
-                    <button id="submit">Search</button>
-                </form>
+                <h2>Your Resource for Vehicle Specifications and Maintenance</h2>
+                <h2>
+                    Please Enter your Vehicles VIN<sup><a href="https://www.carmd.com/where-to-find-vin-number/" target="_blank"><img id="question"src="images/SeekPng.com_blue-circle-png_1457681.png"alt="" /></a></sup>
+                </h2>
+                <div>
+                    <label for="vin">VIN:</label>
+                    <input type="text" id="vin" />
+                </div>
+                <a href="#section1/slide2"><button id="submit">Search</button></a>
             </div>
 
-            <div class="slide sl2" data-anchor="slide2">
-                <div id='leftDiv'>
+            <div class="slide sl2" data-anchor="slide2" id="slidetwo">
+                <div id="leftDiv">
                     <div id="vehInfo" class="leftInDiv">
                         <h2>Specs</h2>
                         <h3>Search a VIN to get Recommendations!</h3>
@@ -39,10 +39,10 @@
                         <h3>Search a VIN to get Recommendations!</h3>
                     </div>
                 </div>
-                <div id='rightDiv'>
+                <div id="rightDiv">
                     <div class="leftInDiv">
                         <h2>Not what you needed?</h2>
-                        <img id="arrow" src="images/SeekPng.com_chennai-super-kings-logo_8987772.png" alt="Arrow Pointing Right">
+                        <img id="arrow" src="images/SeekPng.com_chennai-super-kings-logo_8987772.png" alt="Arrow Pointing Right" />
                     </div>
                     <div class="rightInDiv">
                         <h2>Try these places!</h2>
@@ -65,7 +65,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>

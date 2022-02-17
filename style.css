@@ -1,3 +1,7 @@
+body {
+    overflow-y: visible !important;
+}
+
 @font-face {
     font-family: 'Raleway';
     src: url('Fonts/Raleway/Raleway-VariableFont_wght.ttf');
