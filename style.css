@@ -18,18 +18,13 @@ body {
 }
 
 .s1 h1 {
-    font-family: Raleway;
-    font-size: 8em;
-    font-weight: 400;
-    color: antiquewhite;
-    text-shadow: 1px 1px 3px black;
     margin-bottom: 10px;
 }
 
 .s1 h2 {
     margin-top: 5px;
     font-family: Raleway;
-    font-size: 2em;
+    font-size: clamp(15px, 1.5vw, 300px);
     font-weight: 300;
     text-shadow: 1px 1px 3px black;
     color: antiquewhite;
@@ -65,9 +60,21 @@ select {
 #container {
     display: inline-block;
     text-align: center;
+    width: 100%;
+    max-width: fit-content;
     background-color: rgba(0, 0, 0, .9);
     padding: 20px 15px 20px 15px;
     border-radius: 15px;
+    margin: 5px 5px 5px 5px;
+}
+
+#container h1 {
+    font-family: Raleway;
+    font-size: 7vw;
+    text-size-adjust: 50%;
+    font-weight: 400;
+    color: antiquewhite;
+    text-shadow: 1px 1px 3px black;
 }
 
 #vin {
@@ -94,9 +101,9 @@ select {
     text-shadow: 1px 1px 3px black;
     color: antiquewhite;
     border-radius: 15px;
-    width: 90%;
+    width: 70%;
     height: 45%;
-    margin: 25px 5% 25px 5%;
+    margin: 25px 15% 25px 15%;
     padding: 25px 50px 25px 50px;
 }
 
@@ -111,9 +118,9 @@ select {
     text-shadow: 1px 1px 3px black;
     border-radius: 15px;
     color: antiquewhite;
-    width: 90%;
+    width: 70%;
     height: 45%;
-    margin: 25px 5% 25px 5%;
+    margin: 25px 15% 25px 15%;
     padding: 25px 50px 25px 50px;
 }
 
@@ -128,7 +135,7 @@ select {
 }
 
 .leftInDiv h2 {
-    font-size: 3em;
+    font-size: clamp(15px, 1.5vw, 300px);
 }
 
 .rightInDiv {
@@ -141,7 +148,11 @@ select {
 }
 
 .rightInDiv h2 {
-    font-size: 3em;
+    font-size: clamp(15px, 1.5vw, 300px);
+}
+
+h3 {
+    font-size: clamp(15px, 1vw, 300px);
 }
 
 #arrow {

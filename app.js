@@ -1,7 +1,7 @@
 new fullpage('#fullpage', {
     autoScrolling: true,
-    navigation: true,
-    controlArrows: false,
+    navigation: false,
+    controlArrows: true,
     slidesNavigation: true,
     slidesNavPosition: 'bottom',
     anchors: ['section1', 'section2']
