@@ -43,6 +43,11 @@ body {
     text-align: center;
 }
 
+.btn {
+    margin-top: 15px;
+    font-family: Raleway;
+}
+
 label {
     font-family: Raleway;
     font-style: italic;
@@ -57,10 +62,21 @@ select {
     margin-right: 10px;
 }
 
+#container {
+    display: inline-block;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .9);
+    padding: 20px 15px 20px 15px;
+    border-radius: 15px;
+}
+
 #vin {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 150px;
+    margin: 15px auto 5px auto;
+    width: 250px;
+}
+
+#submit {
+    margin-bottom: 20px;
 }
 
 #or {
@@ -77,6 +93,7 @@ select {
     font-family: Raleway;
     text-shadow: 1px 1px 3px black;
     color: antiquewhite;
+    border-radius: 15px;
     width: 90%;
     height: 45%;
     margin: 25px 5% 25px 5%;
@@ -87,10 +104,12 @@ select {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, .9);
     font-family: Raleway;
     text-shadow: 1px 1px 3px black;
+    border-radius: 15px;
     color: antiquewhite;
     width: 90%;
     height: 45%;
@@ -99,9 +118,12 @@ select {
 }
 
 .leftInDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     height: 100%;
     width: 40%;
-    border: 1px solid gray;
     border-radius: 15px;
 }
 
@@ -110,10 +132,12 @@ select {
 }
 
 .rightInDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     height: 100%;
     width: 40%;
-    border: 1px solid gray;
-    border-radius: 15px;
 }
 
 .rightInDiv h2 {
@@ -121,7 +145,7 @@ select {
 }
 
 #arrow {
-    margin-top: 20px;
+    margin: 20px auto 0px auto;
     color: white;
     height: 28%;
     width: 30%;

@@ -16,6 +16,8 @@ This Project was created with:
 * JQuery
 * [fullPage.JS](https://alvarotrigo.com/fullPage/) Library
 * [NHTSA API](https://vpic.nhtsa.dot.gov/api/)
+* [Bootstrap](https://getbootstrap.com/)
+
 
 ## Plans
 My plans for this project is to not only be a resource to find owners manuals and forums to reference for maintenance purposes but also to be an online vehicle logbook for users to track their maintenance tasks and be reminded when certain maintenance intervals are coming soon. 
