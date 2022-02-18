@@ -166,3 +166,7 @@ h3 {
     height: 15px;
     width: 15px;
 }
+
+#vehInfo h3 {
+    font-size: clamp(12px, 1vw, 300px);
+}
