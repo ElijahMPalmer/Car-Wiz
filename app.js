@@ -18,7 +18,7 @@ $submit.click(function() {
     if ($vin.val().length !== 0) {
         $.get('https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/' + $vin.val() + '?format=json', (data) => {
             console.log(data)
-            const $vinSpecs = $('<h2>Specifications</h2>')
+            const $vinSpecs = $('<h2>Specs</h2>')
             const $vinMake = $('<h3>' + 'Make: ' + data.Results[0].Make + '</h3>');
             const $vinModel = $('<h3>' + 'Model: ' + data.Results[0].Model + '</h3>');
             const $vinYear = $('<h3>' + 'Year: ' + data.Results[0].ModelYear + '</h3>');

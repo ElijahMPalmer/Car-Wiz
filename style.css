@@ -132,6 +132,7 @@ select {
     height: 100%;
     width: 40%;
     border-radius: 15px;
+    margin-right: 50px;
 }
 
 .leftInDiv h2 {
@@ -158,8 +159,8 @@ h3 {
 #arrow {
     margin: 20px auto 0px auto;
     color: white;
-    height: 28%;
-    width: 30%;
+    height: 10vh;
+    width: clamp(80px, 5vw, 110px);
 }
 
 #question {
@@ -168,5 +169,9 @@ h3 {
 }
 
 #vehInfo h3 {
+    font-size: clamp(12px, 1vw, 300px);
+}
+
+#specRes h3 {
     font-size: clamp(12px, 1vw, 300px);
 }
