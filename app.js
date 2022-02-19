@@ -7,17 +7,15 @@ new fullpage('#fullpage', {
     anchors: ['section1', 'section2']
 })
 
-
+const $vin = $('#entry');
 const $submit = $('#submit');
 $submit.click(function() {
-    const $vin = $('#entry');
     const $vehInfo = $("#vehInfo")
     const $resource = $("#specRes")
     $vehInfo.empty();
     $resource.empty();
     if ($vin.val().length !== 0) {
         $.get('https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/' + $vin.val() + '?format=json', (data) => {
-            console.log(data)
             const $vinSpecs = $('<h2>Specs</h2>')
             const $vinMake = $('<h3>' + 'Make: ' + data.Results[0].Make + '</h3>');
             const $vinModel = $('<h3>' + 'Model: ' + data.Results[0].Model + '</h3>');
@@ -156,5 +154,11 @@ $submit.click(function() {
                     $noRes = $('<h3>No Results for now! Manufacturer will be added soon!</h3>')
             }
         })
+    }
+})
+
+$vin.on('click', function(event) {
+    if (event.keycode === 13) {
+        $submit.click();
     }
 })
