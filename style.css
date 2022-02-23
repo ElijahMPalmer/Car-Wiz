@@ -86,11 +86,6 @@ select {
     margin-bottom: 20px;
 }
 
-#or {
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
 #leftDiv {
     display: flex;
     flex-direction: row;
@@ -102,9 +97,8 @@ select {
     color: antiquewhite;
     border-radius: 15px;
     width: 70%;
-    height: 45%;
-    margin: 25px 15% 25px 15%;
-    padding: 25px 50px 25px 50px;
+    margin: 25px 15% 10px 15%;
+    padding: 25px 25px 25px 25px;
 }
 
 #rightDiv {
@@ -119,9 +113,8 @@ select {
     border-radius: 15px;
     color: antiquewhite;
     width: 70%;
-    height: 45%;
-    margin: 25px 15% 25px 15%;
-    padding: 25px 50px 25px 50px;
+    margin: 10px 15% 25px 15%;
+    padding: 25px 25px 25px 25px;
 }
 
 .leftInDiv {
@@ -129,14 +122,13 @@ select {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    float: left;
     height: 100%;
-    width: 40%;
-    border-radius: 15px;
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 .leftInDiv h2 {
-    font-size: clamp(15px, 1.5vw, 300px);
+    font-size: 25px;
 }
 
 .rightInDiv {
@@ -144,12 +136,12 @@ select {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    float: right;
     height: 100%;
-    width: 40%;
 }
 
 .rightInDiv h2 {
-    font-size: clamp(15px, 1.5vw, 300px);
+    font-size: 25px;
 }
 
 h3 {
@@ -169,9 +161,30 @@ h3 {
 }
 
 #vehInfo h3 {
-    font-size: clamp(12px, 1vw, 300px);
+    font-size: 15px;
 }
 
 #specRes h3 {
-    font-size: clamp(12px, 1vw, 300px);
+    font-size: 15px;
+}
+
+@media screen and (max-width: 450px) {
+    #leftDiv {
+        flex-direction: column;
+    }
+    .leftInDiv {
+        margin-right: 0px;
+    }
+    #vehInfo h3 {
+        font-size: 12px;
+    }
+    #specRes h3 {
+        font-size: 12px;
+    }
+    .leftInDiv h2 {
+        font-size: 20px;
+    }
+    .rightInDiv h2 {
+        font-size: 20px;
+    }
 }

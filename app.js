@@ -20,8 +20,8 @@ $submit.click(function() {
             const $vinMake = $('<h3>' + 'Make: ' + data.Results[0].Make + '</h3>');
             const $vinModel = $('<h3>' + 'Model: ' + data.Results[0].Model + '</h3>');
             const $vinYear = $('<h3>' + 'Year: ' + data.Results[0].ModelYear + '</h3>');
-            const $vinEngineConf = $('<h3>' + 'Engine Configuration: ' + data.Results[0].EngineConfiguration + ' ' + data.Results[0].EngineCylinders + ' Cylinder' + '</h3>')
-            const $vinEngineDes = $('<h3>' + 'Engine Designation: ' + data.Results[0].EngineModel + '</h3>')
+            const $vinEngineConf = $('<h3>' + 'Engine Config: ' + data.Results[0].EngineConfiguration + ' ' + data.Results[0].EngineCylinders + ' Cylinder' + '</h3>')
+            const $vinEngineDes = $('<h3>' + 'Engine Desig: ' + data.Results[0].EngineModel + '</h3>')
             const $vinEngineHP = $('<h3>' + 'Engine HP: ' + data.Results[0].EngineHP + '</h3>')
             $vinSpecs.appendTo($vehInfo);
             $vinMake.appendTo($vehInfo);
