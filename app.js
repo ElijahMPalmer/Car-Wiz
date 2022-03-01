@@ -28,6 +28,7 @@ const carMakes = [
 
 const $vin = $('#entry');
 const $submit = $('#submit');
+
 $submit.click(function() {
     const $vehInfo = $("#vehInfo")
     const $resource = $("#specRes")
@@ -58,7 +59,6 @@ $submit.click(function() {
             const $resources = $('<h2>Resources</h2>')
 
             if (foundMake) {
-                console.log(foundMake, " found make")
                 $ownersMan = $('<h3><a href="' + foundMake.manual + '" target="_blank">Owners Manuals</a></h3>');
                 $forum = $('<h3><a href="' + foundMake.forum + '" target="_blank">Forums</a></h3>');
                 $resources.appendTo($resource);
@@ -72,8 +72,9 @@ $submit.click(function() {
     }
 })
 
-$vin.on('click', function(event) {
-    if (event.keycode === 13) {
+$vin.on('keyup', function(event) {
+    if (event.keyCode === 13) {
+        console.log('clicked')
         $submit.click();
     }
 })
