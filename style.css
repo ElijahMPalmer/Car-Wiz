@@ -86,7 +86,7 @@ select {
     margin-bottom: 20px;
 }
 
-#leftDiv {
+#top-div {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -101,7 +101,7 @@ select {
     padding: 25px 25px 25px 25px;
 }
 
-#rightDiv {
+#bottom-div {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -117,7 +117,7 @@ select {
     padding: 25px 25px 25px 25px;
 }
 
-.leftInDiv {
+.left-info-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,11 +127,11 @@ select {
     margin-right: 20px;
 }
 
-.leftInDiv h2 {
+.left-info-container h2 {
     font-size: 25px;
 }
 
-.rightInDiv {
+.right-info-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,7 +140,7 @@ select {
     height: 100%;
 }
 
-.rightInDiv h2 {
+.right-info-container h2 {
     font-size: 25px;
 }
 
@@ -160,31 +160,31 @@ h3 {
     width: 15px;
 }
 
-#vehInfo h3 {
+#vehicle-info h3 {
     font-size: 15px;
 }
 
-#specRes h3 {
+#resource-links h3 {
     font-size: 15px;
 }
 
 @media screen and (max-width: 450px) {
-    #leftDiv {
+    #top-div {
         flex-direction: column;
     }
-    .leftInDiv {
+    .left-info-container {
         margin-right: 0px;
     }
-    #vehInfo h3 {
+    #vehicle-info h3 {
         font-size: 12px;
     }
-    #specRes h3 {
+    #resource-links h3 {
         font-size: 12px;
     }
-    .leftInDiv h2 {
+    .left-info-container h2 {
         font-size: 20px;
     }
-    .rightInDiv h2 {
+    .right-info-container h2 {
         font-size: 20px;
     }
 }
